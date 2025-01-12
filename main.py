@@ -1,8 +1,16 @@
 import csv
+
+#
 CHECKVALUES = "ABCDEFGHJKLMNPQRTUVWXYZ"
 CHECKVALUES_lower = CHECKVALUES.lower()
 
 def checkULN(studentULN, studentCode):
+    """
+    
+    :param studentULN:
+    :param studentCode:
+    :return:
+    """
     if len(studentULN) != 10:
         print(f'Invalid length ULN for {studentCode}: {studentULN}')
     else:
